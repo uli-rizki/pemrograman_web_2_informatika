@@ -18,14 +18,12 @@
 </html>
 <?php 
 
-// tipe data isset boolean
-if( isset($_GET['nama']) ) {
+if(isset($_GET['nama'])){
     $nama = $_GET['nama'];
     echo "Nama : ".$nama."<br>";
 }
-if( isset($_GET['alamat'])) {
+if(isset($_GET['alamat'])) {
     $alamat = $_GET['alamat'];
     echo "Alamat : ".$alamat;
 }
-
 ?>
