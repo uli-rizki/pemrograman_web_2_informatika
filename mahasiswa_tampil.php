@@ -1,4 +1,9 @@
 <?php 
+
+if(! isset($_SESSION['username'])) {
+    header('Location: login.php');
+}
+
 require('koneksi.php');
 
 # query untuk mengambil semua data dari tabel mahasiswa

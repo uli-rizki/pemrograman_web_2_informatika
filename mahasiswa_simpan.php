@@ -11,12 +11,12 @@ $qry = "INSERT INTO mahasiswa (nim, nama_lengkap, jenis_kelamin)
         VALUES ('$nim', '$nama_lengkap', '$jenis_kelamin')";
 
 // jalankan query menggunakan koneksi
-$hasil = $koneksi->query($qry);
+$hasil = $koneksi->query($qry); // true or false
 
 if($hasil) {
     echo "Data berhasil ditambahakan";
     // kembali ke halaman tampil data mahasiswa
-    header("Location: mahasiswa_tampil.php");
+    // header("Location: mahasiswa_tampil.php");
 } else {
     echo "Gagal menambahkan data";
 }
